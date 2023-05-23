@@ -10,7 +10,7 @@ body {
 }
 
 header {
-    background: #43a8f0;
+    background: #05d763;
     color: #fff;
     padding: 7px;
 }
@@ -58,19 +58,19 @@ header {
 
 .primary {
     --btn-color: #fff;
-    --btn-bg: #43a8f0;
-    --btn-border-color: #43a8f0;
+    --btn-bg: #0abe79;
+    --btn-border-color: #0abe79;
     --btn-hover-color: #fff;
-    --btn-hover-bg: #116bf0;
-    --btn-hover-border-color: #0a58ca;
+    --btn-hover-bg: #0abe79;
+    --btn-hover-border-color: #0abe79;
     --btn-focus-shadow-rgb: 49,132,253;
     --btn-active-color: #fff;
-    --btn-active-bg: #0a58ca;
-    --btn-active-border-color: #0a53be;
+    --btn-active-bg: #0abe79;
+    --btn-active-border-color: #0abe79;
     --btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
     --btn-disabled-color: #fff;
-    --btn-disabled-bg: #0d6efd;
-    --btn-disabled-border-color: #0d6efd;
+    --btn-disabled-bg: #0abe79;
+    --btn-disabled-border-color: #0abe79;
 }
 
 .secondary {
@@ -79,7 +79,7 @@ header {
     --btn-border-color: #88d123;
     --btn-hover-color: #fff;
     --btn-hover-bg: #88d123;
-    --btn-hover-border-color: #88d123;
+    --btn-hover-border-color: rgb(85, 137, 13);
     --btn-focus-shadow-rgb: 131,83,256;
     --btn-active-color: #fff;
     --btn-active-bg: #88d123;

@@ -1,13 +1,12 @@
 const socket = io();
-const send = document.querySelector("#enviar-mensaje");
+const enviar = document.querySelector("#enviar-mensaje");
 const mostrarMensajes = document.querySelector("#todosMensajes");
 
-send.addEventListener("click", () => {
+enviar.addEventListener("click", () => {
 
     const message = document.querySelector("#message");
 
     socket.emit("message", message.value);
-
     message.value = "";
 
 });
