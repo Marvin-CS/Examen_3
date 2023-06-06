@@ -17,14 +17,14 @@ socket.on("message", ({user, message}) => {
     <div class="message">
                 
         <div class="image-container">
-            <img src="/imagen/mujer.png">
+            <img id="car"></img> 
         </div>
 
         <div class="message-body">
             
             <div class="user-info">
                 <span class="username">${user}</span>
-                <span class="time">Hace 1 segundo</span>
+                <span class="time">añadio un comentario</span>
                 <span class="time">${horaActual}</span>
             </div>
             <p>${message}</p>

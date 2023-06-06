@@ -4,22 +4,110 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/estilos.css">
-    <title>Taller Apps Internet</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style-login.css">
+    <title>examen finalt</title>
 </head>
 <body>
-    <h1>CHAT CON SOCKET IO (Taller Apps)</h1>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container px-5">
+                <a class="navbar-brand" href="#!">Servicio Tecnico</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#!">
+                            Acerca de</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#!">Contactos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#!">Servicios</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="row gx-4 gx-lg-5 align-items-center my-5">
+            <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="https://leasein.pe/wp-content/uploads/2022/08/repararacion-de-laptop-1.webp" alt="..." /></div>
+            <div class="col-lg-5">
+                <h1 class="font-weight-light">Servicios</h1>
+                <p>Recibe soporte técnico integral con la experiencia y calidad por parte de una empresa de mantenimiento de computadores. Te brindamos soluciones ajustadas a tus necesidades: soporte técnico remoto, mantenimiento de computadores (preventivo y correctivo), instalación y licenciamiento de programas (software y antivirus) y venta de computadores y accesorios.</p>
+                <a class="btn btn-primary" href="#!">Ver mas</a>
+            </div>
+        </div>
+        <!-- Call to Action-->
+        <div class="card text-white bg-secondary my-5 py-4 text-center">
+            <div class="card-body"><p class="text-white m-0">Mantenimiento de computadores
+                Nuestro compromiso contigo es ayudarte a tener tus dispositivos funcionando y que seas 100% productivo.</p></div>
+        </div>
+        <!-- Content Row-->
+        <div class="row gx-4 gx-lg-5">
+            <div class="col-md-4 mb-5">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h2 class="card-title">Reparaciónes</h2>
+                        <p class="card-text">Realizamos una variedad de servicios para que tu impresora funcione de la mejor manera. Nuestro equipo de técnicos altamente capacitados realiza una serie de servicios para que tu impresora funcione sin problemas, incluidos los servicios de reparación y mantenimiento de impresoras para casi cualquier marca y modelo.</p>
+                    </div>
+                    <div class="card-footer"><a class="btn btn-primary btn-sm" href="#!">Más info...</a></div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-5">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h2 class="card-title">Mantenimientos</h2>
+                        <p class="card-text">El servicio mantenimiento de computadores puedes realizarlo periódicamente en todo equipo de cómputo que tengas en uso. Hacerlo, te ayuda a prevenir fallas o tener que invertir en reparaciones costosas que puedan afectar tu presupuesto y hasta el rendimiento y funcionamiento correcto de tus equipos.</p>
+                    </div>
+                    <div class="card-footer"><a class="btn btn-primary btn-sm" href="#!">Más info...</a></div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-5">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h2 class="card-title">Soporte técnico remoto</h2>
+                        <p class="card-text">El soporte técnico remoto es un servicio en el que nuestro equipo resuelve problemas técnicos al conectarse a tu computadora a través de internet.</p>
+                    </div>
+                    <div class="card-footer"><a class="btn btn-primary btn-sm" href="#!">Más info...</a></div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="row mt-4">
+            <div class="col-md-12">
+                <h4><strong>Realtime comment system using NodeJs, Express, Mongo DB, Socket.io and vanila
+                        Javascript</strong></h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam enim, vitae cum error facere facilis
+                    aperiam delectus ducimus necessitatibus, at, rem explicabo nulla. Maxime tempore sunt ipsa fuga
+                    velit minus culpa laboriosam. Laborum architecto, natus reprehenderit consequatur maiores facilis,
+                    sunt laboriosam explicabo sit officiis accusamus sint eligendi debitis corrupti ad eaque nihil ullam
+                    omnis officia id dolorum? Alias, tempore possimus.</p>
+            </div>
+        </div> -->
+
+        <div class="row mb-4">
+            <div class="col-md-12">
+                <h4 class="border-bottom pb-2">Comentarios</h4>
+            </div>
+            <div class="col-md-12">                
+                <div id="todosMensajes"></div>
+                <div class="enviar-mensaje">
+                    <input type="text" id="message" rows="3" class="form-control" placeholder="Escriba su comentario">
+                    <div class="form-group">                                           
+                    </div>
+                    <button type="button" id="enviar-mensaje" class="btn btn-primary float-right">comentar</button>
+                </div>
+                <!-- <div class="enviar-mensaje">
+                    <input type="text" id="message" rows="3" class="form-control"></input>
+                    <button type="button" id="enviar-mensaje" class="btn btn-primary float-right">Publicar comentario</button>
+                </div> -->
+            </div>
+            
+    <!-- <h1>comentarios</h1>
     <main>
         <div id="todosMensajes"></div>
         <div class="enviar-mensaje">
             <input type="text" id="message">
-            <button type="button" id="enviar-mensaje" class="btn secondary">Enviar</button>
+            <button type="button" id="enviar-mensaje" class="btn secondary">comentar</button>
         </div>
-    </main>
+    </main> -->
     <script src="/socket.io/socket.io.js"></script>
     <script src="js/script.js"></script>
-    <!-- <script>
-        const socket = io();
-    </script> -->
+
 </body>
 </html>

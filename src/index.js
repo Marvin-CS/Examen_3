@@ -2,15 +2,20 @@ const express = require("express");
 const path = require("path");
 const { createServer } = require("http");
 const servidorRealtime = require("./servidorRealtime");
+
+
+
 // const { Server } = require("socket.io"); 
 const cookieParser = require("cookie-parser");
 const app = express();
 const httpServer = createServer(app);
+
+
+
 //configuraciones
 app.set("port", process.env.PORT || 3000);
 app.set("views", path.join(__dirname, "views"));
 app.use(cookieParser());
-
 //rutas
 app.use(require("./routes"));
 // Public
